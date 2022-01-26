@@ -1,0 +1,30 @@
+<html>
+<head>
+
+
+
+<style>
+
+
+.intro-container{
+    display:flex;
+    justify-content:space-around;
+    padding-top: 10vw;
+}
+
+.footer-container{
+    background-color: #2d3088;
+   }
+.succes-story
+{
+    margin:0 auto;
+    width: 30%;
+}
+.connect-us{
+    display:flex;
+}
+
+
+</style>
+</head>
+</html>

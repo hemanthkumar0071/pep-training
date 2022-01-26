@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head><title>form filling</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+form{
+display: block;
+margin:0em;
+}
+
+div{
+border-radius:5px;
+background-color:lightgrey;
+padding:20px;}
+
+input[type=text],select{
+width: 95%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid black;
+border-radius:4px;
+}
+
+input[type=submit]{
+width:100%;
+background-color: green;
+padding:14px 20px;
+margin:14px 0;
+border:none;
+border-radius:4px;
+}
+
+
+
+input[type=submit]:hover{backgroud-color:blue;}
+
+
+
+</style>
+
+
+<body>
+
+<h2>fill the form</h2>
+
+<div>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+    <label for="lname">last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  
+
+  <label for="country">Choose a country:</label>
+<br>
+  <select id="country" name="country ">
+    <option>select country</option>
+    <option value="india">India</option>
+    <option value="australia">australia</option>
+    <option value="europee">europe</option>
+    <option value="U A E">U A E</option>
+    <option value="America">America</option>
+    <option value="ENgland">England</option>
+    <option value="South africa">South africa</option>
+    <option value="Belgium">Belgium</option>
+    <option value="canada">Canada</option>
+    <option value="srilanka">srilanka</option>
+  </select><br>
+
+
+
+<!--dropdown using bootstrap-->
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+
+
+<input type="submit" value="Submit">
+
+</form>
+
+</div>
+</body>
+</html>
